@@ -1,0 +1,31 @@
+{
+  "name": "node-express-mysql-mvc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha --timeout 10000",
+    "server": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "express-validator": "^5.3.1",
+    "jsonwebtoken": "^8.4.0",
+    "knex": "^0.16.3",
+    "md5": "^2.2.1",
+    "moment": "^2.24.0",
+    "multer": "^1.4.1",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "mocha": "^5.0.5"
+  }
+}
