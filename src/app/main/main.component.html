@@ -1,0 +1,41 @@
+<mat-toolbar color="primary">
+    <span>Angular POC SSO</span>
+    <span class="example-fill-remaining-space"></span>
+    <span (click)="profile()">Profile</span>
+    &nbsp; &nbsp;
+    <span (click)="logout()">Logout</span>
+</mat-toolbar>
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side" opened>
+        <!-- <p>Welcome {{decodedToken.first_name}}</p> -->
+        <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+        <button (click)="showFiller = !showFiller" mat-raised-button>
+            Toggle extra text
+        </button>
+        <br>
+        <button class="menu" (click)="profile()" mat-raised-button>
+            Profile
+        </button>
+        <button class="menu" (click)="dashboard()" mat-raised-button>
+            Dashboard
+        </button>
+    </mat-drawer>
+    <div>
+
+        <!-- <div>
+            <mat-card>
+                <mat-card-title class="login-title">
+                    <button type="button" mat-button (click)="drawer.toggle()">
+                        Toggle sidenav
+                    </button>
+                    Dashboard</mat-card-title>
+            </mat-card>
+        </div> -->
+        <div class="container">
+            <router-outlet></router-outlet>
+        </div>
+
+
+    </div>
+
+</mat-drawer-container>

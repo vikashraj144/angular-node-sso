@@ -1,0 +1,48 @@
+
+.example-fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+  }
+
+  .dashboard{
+   padding: 10%;
+   width: 40%;
+   margin-left: 20%;
+}
+
+.input-box{
+   width: 100%;
+}
+.login-title{
+   text-align: center;
+}
+
+.example-container {
+   width: 100%;
+   height: 100%;
+   /* border: 1px solid rgba(0, 0, 0, 0.5); */
+ }
+ 
+ .example-sidenav-content {
+   display: flex;
+   height: 100%;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ .example-sidenav {
+   padding: 20px;
+ }
+.card{
+ width: 28%;
+ margin : 1%;
+ display: inline-grid;
+}
+ 
+.menu{
+   width: 100%;
+}
+.container{
+   margin-left: 2%;
+}
